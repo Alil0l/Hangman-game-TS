@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Black.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Medium.ttf);
+  font-weight: 500;
+}
+$main-color: #cf4647;
+$white: #f8f6f6;
+$black: #2a363b;
+$font-black: #0e0e0e;
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: 0.2s ease;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "Roboto";
+  font-weight: 500;
+  background-color: $black;
+  color: $white;
+}
+
+header {
+  text-align: center;
+  margin: auto;
+  span {
+    font-size: 80px;
+    color: $main-color;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  h1 {
+    font-size: 32px;
+    margin: 16px 0;
+  }
+  p {
+    font-size: 24px;
+  }
+}
+
+.stickman {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blur {
+  filter: blur(8px);
+}
+.output {
+  background-color: transparent;
+  color: $white;
+  height: 44px;
+  min-width: 320px;
+  font-weight: 900;
+  font-size: 32px;
+  letter-spacing: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+.visible {
+  display: initial;
+}
+.message {
+  padding: 12px 24px;
+  background-color: $main-color;
+  border-radius: 999px;
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.keyboard-box {
+  display: flex;
+  .keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+.key {
+  background-color: $main-color;
+  border: 1px solid $white;
+  color: $font-black;
+  border-radius: 8px;
+  font-family: "Roboto";
+  font-weight: 500;
+  min-width: 26px;
+  margin: 2px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+.popup-landing {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: hsla(0, 0%, 0%, 0.9);
+  right: 0;
+  z-index: 999;
+
+  .name-input {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    input {
+      height: 80px;
+      width: 60%;
+      background-color: #2a363b;
+      color: $main-color;
+      font-size: 40px;
+      font-weight: 900;
+      border: 1px solid gainsboro;
+      border-radius: 12px;
+      padding-inline: 12px;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Hangman Game | TS & SCSS</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="blur">
+      <h2>Welcome, <span class="user-name">Ali</span></h2>
+      <h1>To Hangman Game!</h1>
+      <p>Guess this word...</p>
+    </header>
+    <main>
+      <!-- Container for the game -->
+      <div class="container blur">
+        <div class="stickman">
+          <svg width="200" height="250">
+            <!-- Rod -->
+            <line
+              x1="60"
+              y1="20"
+              x2="140"
+              y2="20"
+              stroke="white"
+              stroke-width="4"
+            />
+            <line
+              x1="30"
+              y1="230"
+              x2="180"
+              y2="230"
+              stroke="white"
+              stroke-width="4"
+            />
+            <line
+              x1="140"
+              y1="20"
+              x2="140"
+              y2="50"
+              stroke="white"
+              stroke-width="4"
+            />
+            <line
+              x1="60"
+              y1="20"
+              x2="60"
+              y2="230"
+              stroke="white"
+              stroke-width="4"
+            />
+
+            <!-- Head -->
+            <circle
+              fill="none"
+              cx="140"
+              cy="70"
+              r="20"
+              stroke="white"
+              stroke-width="4"
+              class="figure-part"
+            />
+            <!-- Body -->
+            <line
+              x1="140"
+              y1="90"
+              x2="140"
+              y2="150"
+              stroke="white"
+              stroke-width="4"
+              class="figure-part"
+            />
+            <!-- Arms -->
+            <line
+              x1="140"
+              y1="100"
+              x2="120"
+              y2="120"
+              stroke="white"
+              stroke-width="4"
+              class="figure-part"
+            />
+            <line
+              x1="140"
+              y1="100"
+              x2="160"
+              y2="120"
+              stroke="white"
+              stroke-width="4"
+              class="figure-part"
+            />
+            <!-- Legs -->
+            <line
+              x1="140"
+              y1="150"
+              x2="120"
+              y2="180"
+              stroke="white"
+              stroke-width="4"
+              class="figure-part"
+            />
+            <line
+              x1="140"
+              y1="150"
+              x2="160"
+              y2="180"
+              stroke="white"
+              stroke-width="4"
+              class="figure-part"
+            />
+          </svg>
+        </div>
+        <!-- Keyboard -->
+        <div id="output" class="word-len output"></div>
+        <div class="keyboard-box">
+          <div id="keyboard" class="keyboard"></div>
+        </div>
+      </div>
+      <!-- User input name -->
+      <div class="popup-landing hidden">
+        <div class="name-input">
+          <input
+            type="text"
+            id="userName"
+            class="userName"
+            placeholder="Enter your name.."
+          />
+        </div>
+      </div>
+      <div class="message hidden"><p>Enter a New letter</p></div>
+    </main>
+    <script src="script/script.js"></script>
+  </body>
+</html>
