@@ -86,15 +86,7 @@ main {
 .visible {
   display: initial !important;
 }
-.output {
-  background-color: transparent;
-  color: $white;
-  height: 44px;
-  font-weight: 900;
-  font-size: 40px;
-  letter-spacing: 4px;
-  text-align: center;
-}
+
 .dashesPlace {
   display: flex;
   justify-self: center;
@@ -243,5 +235,90 @@ li.guessed {
     color: $black;
     font-weight: 800;
     font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  header {
+    span {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 16px 0;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .container-screen {
+    padding: 0 10px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .dashesPlace {
+    font-size: 1.5rem;
+    li {
+      margin-inline: 4px;
+      min-width: 20px;
+      border-bottom: 2px solid gainsboro;
+    }
+  }
+  .keyboard-box {
+    display: flex;
+    margin-block: 8px;
+    .keyboard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+    .key {
+      min-width: 20px;
+      margin: 2px;
+      padding: 4px 12px;
+      font-size: 10px;
+    }
+  }
+  .popup-landing {
+    .name-input {
+      form {
+        width: 70%;
+        gap: 16px;
+      }
+      input.userName {
+        height: 60px;
+        width: 100%;
+        font-size: 16px;
+        border-radius: 4px;
+        padding-inline: 8px;
+      }
+      button.submit {
+        border-radius: 4px;
+        padding: 10px 14px;
+      }
+    }
+  }
+  .msg {
+    width: 80%;
+    height: 250px;
+    gap: 20px;
+    border-radius: 16px;
+    .winLoseMsg {
+      font-size: 24px;
+    }
+    .replay {
+      padding: 6px 18px;
+      border-radius: 4px;
+      font-size: 16px;
+    }
   }
 }
