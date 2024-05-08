@@ -1,3 +1,7 @@
+$main-color: #cf4647;
+$white: #f8f6f6;
+$black: #2a363b;
+$font-black: #0e0e0e;
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/Roboto-Black.ttf);
@@ -8,10 +12,6 @@
   src: url(../fonts/Roboto-Medium.ttf);
   font-weight: 500;
 }
-$main-color: #cf4647;
-$white: #f8f6f6;
-$black: #2a363b;
-$font-black: #0e0e0e;
 *,
 ::after,
 ::before {
@@ -115,7 +115,6 @@ li.guessed {
   border-bottom: 0px;
   margin-bottom: 16px;
 }
-
 .keyboard-box {
   display: flex;
   margin-block: 8px;
@@ -245,7 +244,4 @@ li.guessed {
     font-weight: 800;
     font-size: 20px;
   }
-}
-
-@media (max-width: 576px) {
 }

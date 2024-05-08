@@ -46,8 +46,7 @@ let isPlayable: boolean = true;
 })();
 
 // Fetch a random words from an api
-// https://random-word-api.herokuapp.com/word?number=10
-
+// https://random-word-api.herokuapp.com/word?number=10d
 const getRandomWords = (number: number): Promise<string[]> => {
   return fetch(`https://random-word-api.herokuapp.com/word?number=${number}`)
     .then((response) => response.json())

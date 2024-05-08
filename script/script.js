@@ -44,7 +44,7 @@ var isPlayable = true;
     });
 })();
 // Fetch a random words from an api
-// https://random-word-api.herokuapp.com/word?number=10
+// https://random-word-api.herokuapp.com/word?number=10d
 var getRandomWords = function (number) {
     return fetch("https://random-word-api.herokuapp.com/word?number=".concat(number))
         .then(function (response) { return response.json(); })
