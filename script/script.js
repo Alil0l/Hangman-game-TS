@@ -61,7 +61,6 @@ function randomWord() {
             .map(function () { return "<li class=\"letter\"></li>"; })
             .join("");
         limit = puzzleWord.length;
-        console.log(puzzleWord, limit);
     });
 }
 randomWord();
