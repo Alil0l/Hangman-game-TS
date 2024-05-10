@@ -2,7 +2,7 @@
 
 ## Landing
 
-![A shadowy figure hangs precariously from a noose, with the letters of the alphabet scattered below](https://github.com/Alil0l/Hangman-game-TS/assets/137832626/9647afc2-3ead-4904-a9fe-75511878baae)
+<a href="https://alil0l.github.io/Hangman-game-TS/" target="_blank">![A shadowy figure hangs precariously from a noose, with the letters of the alphabet scattered below](https://github.com/Alil0l/Hangman-game-TS/assets/137832626/9647afc2-3ead-4904-a9fe-75511878baae)</a>
 
 ### ☠️ **Unleash your inner wordsmith and defy the hangman's noose!** ⚔️
 
